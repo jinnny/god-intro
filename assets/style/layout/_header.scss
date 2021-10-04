@@ -32,7 +32,7 @@
       -webkit-transition: background-image .5s, background-size .5s;
       transition: background-image .5s, background-size .5s;
       background-repeat: no-repeat;
-      background-image: url("../images/common/img-logo-temp.svg");
+      background-image: url("../images/common/img-logo-temp.png");
       background-size: auto 53px;
       background-position: 0 50%;
       @include respond-to(720) {
