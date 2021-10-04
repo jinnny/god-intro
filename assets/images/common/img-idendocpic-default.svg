@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="150" viewBox="0 0 263 150">
+    <defs>
+        <style>
+            .cls-2{fill:#e1e8ef}
+        </style>
+    </defs>
+    <g id="img_idendocpic_default" transform="translate(-38.996 -12)">
+        <g id="그룹_2845">
+            <rect id="사각형_521" width="263" height="150" fill="#fff" rx="12" transform="translate(38.996 12)"/>
+            <circle id="타원_77" cx="28" cy="28" r="28" class="cls-2" transform="translate(224.996 25)"/>
+            <path id="사각형_512" d="M0 0H13V32H0z" class="cls-2" transform="translate(59.996 37)"/>
+            <path id="사각형_513" d="M0 0H13V32H0z" class="cls-2" transform="translate(82.996 37)"/>
+            <path id="사각형_514" d="M0 0H13V32H0z" class="cls-2" transform="translate(105.996 37)"/>
+            <path id="사각형_515" d="M0 0H13V32H0z" class="cls-2" transform="translate(128.996 37)"/>
+            <path id="사각형_516" d="M0 0H13V32H0z" class="cls-2" transform="translate(151.996 37)"/>
+            <path id="사각형_517" d="M0 0H13V32H0z" class="cls-2" transform="translate(174.996 37)"/>
+            <path id="사각형_518" d="M0 0H221V12H0z" class="cls-2" transform="translate(59.996 95)"/>
+            <path id="사각형_519" d="M0 0H221V12H0z" class="cls-2" transform="translate(59.996 113)"/>
+            <path id="사각형_520" d="M0 0H76V12H0z" class="cls-2" transform="translate(59.996 131)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+.footer {
+  border-top: solid 1px $very-very-light-grey;
+  padding: 52px 0 60px;
+  text-align: center;
+  background: $white;
+  float: left;
+  width: 100%;
+  @include respond-to(720) {
+    padding: 7.2vw 5.5% 8vw;
+    box-sizing: border-box;
+  }
+  &-nav {
+    &__link {
+      color: $black;
+      font-size: 18px;
+      position: relative;
+      padding: 0 15px;
+      &:not(:last-child):after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        background: $black;
+      }
+      @include respond-to(720) {
+        font-size: 11px;
+        padding: 0 2vw;
+      }
+    }
+  }
+  &__item {
+    line-height: 1.5;
+    margin: 17px 0 43px;
+    color: $very-very-light-pink;
+    * {
+      color: $very-very-light-pink;
+    }
+    .mobile--hide {
+      display: inline-block !important;
+      @include respond-to(720) {
+        display: none !important;
+      }
+    }
+    @include respond-to(720) {
+      font-size: 11px;
+      margin: 2.3vw 0 6vw;
+    }
+  }
+  &-copyright {
+    display: block;
+    text-transform: uppercase;
+    color: inherit;
+  }
+  &-logo {
+    height: 92px;
+    background: url("../images/common/img-bi-gray.svg") no-repeat 50% 0;
+    @include respond-to(720) {
+      height: 12.7vw;
+      background-size: contain;
+    }
+  }
+}

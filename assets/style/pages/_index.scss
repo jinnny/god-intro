@@ -1,0 +1,159 @@
+.main {
+ .main-section {
+   width: 100%;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-image: url("../images/main/bg-01-temp.jpg");
+   background-size: cover;
+   background-position: 50% 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   @include respond-to(720) {
+     background-image: url("../images/main/bg-01-temp-mobile.jpg");
+   }
+   &__title {
+     background: url("../images/common/img-logo-2-temp.png") 48% 0 no-repeat;
+     padding-top: 148px;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 1.25;
+     color: $white;
+     @include respond-to(720) {
+       background-size: 80px;
+       padding-top: 80px;
+       font-size: 22px;
+       text-align: center;
+     }
+   }
+   &__description {
+     margin-top: 38px;
+     margin-bottom: 60px;
+     font-size: 30px;
+     line-height: 1.33;
+     color: $white;
+     text-align: center;
+     @include respond-to(720) {
+       margin-top: 5.2vw;
+       margin-bottom: 8.3vw;
+       font-size: 17px;
+     }
+   }
+   &__link {
+     display: block;
+     margin-top: 20px;
+     @include respond-to(720) {
+       margin-top: 3.6vw;
+       width: 56%;
+     }
+   }
+ }
+  &-content {
+    padding: 150px 0 150px;
+    @include respond-to(720) {
+      padding: 20vw 0;
+    }
+    &__title {
+      color: $greyish-brown;
+      font-size: 40px;
+      font-weight: normal;
+      margin-top: 6px;
+      margin-bottom: 70px;
+      &-english {
+        color: $greyish-brown;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      @include respond-to(720) {
+        font-size: 20px;
+        margin-bottom: 9.7vw;
+        &-english {
+          font-size: 17px;
+        }
+      }
+    }
+    .main-intro-content {
+      color: $greyish-brown;
+      line-height: 1.78;
+      font-size: 18px;
+      @include respond-to(720) {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
+    &.intro {
+      .main-content__title {
+        margin-bottom: 53px;
+        @include respond-to(720) {
+          margin-bottom: 7.36vw;
+        }
+      }
+    }
+    &.spirit {
+      background-color: $turquoise;
+      * {
+        color: $white;
+      }
+      .main-content__title {
+        margin-bottom: 64px;
+      }
+      .pc--hide {
+        width: 72.5%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    &.history {
+      background-color: $white;
+      background-repeat: no-repeat;
+      background-image: url("../images/main/bg-02-temp.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      @include respond-to(720) {
+        background-image: url("../images/main/bg-02-temp-mobile.png");
+      }
+    }
+    &.service {
+      .main-section__link {
+        margin-top: 60px;
+        text-align: center;
+        @include respond-to(720) {
+          margin-top: 13vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+    &.location {
+      background-color: $very-light-grey;
+    }
+    &.inquiry {
+      padding: 123px 0 194px;
+      background-repeat: no-repeat;
+      background-image: url("../images/main/bg-03-temp.jpg");
+      background-size: cover;
+      background-position: 50% 50%;
+      text-align: center;
+      .mobile--hide {
+        display: inline-block !important;
+        @include respond-to(720) {
+          display: none !important;
+        }
+      }
+      .main-section__link {
+        margin-top: 57px;
+      }
+      @include respond-to(720) {
+        background-image: url("../images/main/bg-03-temp-mobile.jpg");
+        padding: 17vw 3.6% 27vw;
+        .main-section__link {
+          margin-top: 13vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

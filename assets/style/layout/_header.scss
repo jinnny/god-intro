@@ -1,0 +1,58 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: 0;
+  z-index: 30;
+  box-sizing: border-box;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+  background: rgba(254,254,254,0.92);
+  @include respond-to(720) {
+    height: 45px;
+  }
+  &-logo {
+    width: 174px;
+    height: 53px;
+    @include respond-to(720) {
+      width: 24.16%;
+      height: 45px;
+      max-width: 174px;
+    }
+    &__link {
+      width: 174px;
+      height: 100%;
+      display: block;
+      -webkit-transition: background-image .5s, background-size .5s;
+      transition: background-image .5s, background-size .5s;
+      background-repeat: no-repeat;
+      background-image: url("../images/common/img-logo-temp.svg");
+      background-size: auto 53px;
+      background-position: 0 50%;
+      @include respond-to(720) {
+        width: 100%;
+        background-size: contain;
+      }
+    }
+  }
+  &-menu {
+    @include respond-to(720) {
+      display: none;
+    }
+    &__link {
+      font-weight: 800;
+      margin: 0 20px;
+      font-size: 18px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
