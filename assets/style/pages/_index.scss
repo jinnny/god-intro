@@ -16,10 +16,19 @@
    &__title {
      background: url("../images/common/img-logo-2-temp.png") 48% 0 no-repeat;
      padding-top: 148px;
-     font-size: 40px;
+     font-size: 50px;
      font-weight: 800;
      line-height: 1.25;
      color: $white;
+     text-align: center;
+     &--impact {
+       font-size: 60px;
+       display: block;
+       margin-bottom: 5px;
+       @include respond-to(720) {
+         font-size: 30px;
+       }
+     }
      @include respond-to(720) {
        background-size: 80px;
        padding-top: 80px;
@@ -27,13 +36,54 @@
        text-align: center;
      }
    }
+   .main-button-area {
+     display: flex;
+     align-items: center;
+     @include respond-to(721,'min') {
+       .main-section__link {
+         & + .main-section__link {
+           margin-left: 25px;
+         }
+       }
+     }
+     @include respond-to(720) {
+       flex-direction: column;
+     }
+   }
    &__description {
-     margin-top: 38px;
-     margin-bottom: 60px;
-     font-size: 30px;
+     margin-top: 40px;
+     margin-bottom: 36px;
+     font-size: 35px;
      line-height: 1.33;
      color: $white;
      text-align: center;
+     &-small {
+       margin-top: 66px;
+       color: $white;
+       text-align: center;
+       font-size: 32px;
+       font-weight: 800;
+       @include respond-to(720) {
+         margin-top: 9vw;
+         font-size: 16px;
+       }
+       small {
+         &:first-child {
+           margin-top: 20px;
+           @include respond-to(720) {
+             margin-top: 2vw;
+           }
+         }
+         margin-top: 5px;
+         color: $white;
+         font-weight: 600;
+         display: block;
+         font-size: 18px;
+         @include respond-to(720) {
+           font-size: 14px;
+         }
+       }
+     }
      @include respond-to(720) {
        margin-top: 5.2vw;
        margin-bottom: 8.3vw;
