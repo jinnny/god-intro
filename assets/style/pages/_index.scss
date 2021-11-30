@@ -26,10 +26,15 @@
    background-position: 50% 50%;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
    flex-direction: column;
    @include respond-to(720) {
      background-image: url("../images/main/bg-01-temp-mobile.jpg");
+     padding-top: 45px;
+     .main-slogan {
+       width: 38%;
+       max-width: 273px;
+     }
    }
    &__title {
      background: url("../images/common/img-logo-2-temp.png") 51% 0 no-repeat;
@@ -70,11 +75,12 @@
      }
    }
    &__description {
-     margin-top: 3.3vh;
-     margin-bottom: 3vh;
-     font-size: 35px;
+     margin-top: 3vh;
+     margin-bottom: 5vh;
+     font-size: 42px;
      line-height: 1.33;
      color: $white;
+     font-weight: 800;
      text-align: center;
      &-small {
        margin-top: 6.11vh;
